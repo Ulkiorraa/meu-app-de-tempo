@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import { TextField, Button } from '@mui/material';
 
 function SearchBar({ onSearch }) {
   const [city, setCity] = useState("");
@@ -10,15 +11,23 @@ function SearchBar({ onSearch }) {
   };
 
   return (
-    <form className="search-bar" onSubmit={handleSubmit}>
-      <input
-        type="text"
+    <div className="search-bar">
+      <TextField
+        label="Cidade"
+        variant="outlined"
         value={city}
         onChange={(e) => setCity(e.target.value)}
-        placeholder="Digite a cidade"
+        style={{ marginRight: '10px', borderRadius: '20px' }}
       />
-      <button type="submit">Buscar</button>
-    </form>
+      <Button 
+        variant="contained" 
+        color="primary" 
+        onClick={handleSubmit}
+        style={{ borderRadius: '20px' }}
+      >
+        Buscar
+      </Button>
+    </div>
   );
 }
 SearchBar.propTypes = {
