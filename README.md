@@ -12,7 +12,13 @@ Este é um aplicativo de previsão do tempo desenvolvido em React. Ele permite a
 Para instalar e executar o projeto localmente, siga estes passos:
 1. Clone o repositório: `git clone [URL do seu repositório]`
 2. Instale as dependências: `npm install`
-3. Execute o aplicativo: `npm start`
+3. Crie um arquivo `config.js` na raiz do projeto seguindo o modelo abaixo:
+   ```javascript
+   const API_KEY = 'sua_api_key_aqui';
+   export default API_KEY;
+   ```
+Substitua 'sua_api_key_aqui' com a sua chave da API OpenWeatherMap.
+4. Obtenha sua chave da API gratuita no site da OpenWeatherMap em openweathermap.org/api.
 
 ## Uso
 Digite o nome de uma cidade na barra de pesquisa e pressione 'Buscar' para ver a previsão do tempo atual para essa localidade.
