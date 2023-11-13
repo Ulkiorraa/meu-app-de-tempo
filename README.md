@@ -17,7 +17,7 @@ Para instalar e executar o projeto localmente, siga estes passos:
    const API_KEY = 'sua_api_key_aqui';
    export default API_KEY;
    ```
-Substitua 'sua_api_key_aqui' com a sua chave da API OpenWeatherMap.
+   Substitua 'sua_api_key_aqui' com a sua chave da API OpenWeatherMap.
 
 4. Obtenha sua chave da API gratuita no site da OpenWeatherMap em openweathermap.org/api.
 
